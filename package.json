@@ -9,7 +9,10 @@
     "build": "ionic-app-scripts build",
     "lint": "ionic-app-scripts lint",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "ionic:watch:before": "start nodemon ./server/server.js",
+    "prestart": "start nodemon ./server/server.js",
+    "start": "echo \" ... continuing execution\""
   },
   "dependencies": {
     "@angular/common": "4.1.3",
@@ -33,7 +36,9 @@
   "devDependencies": {
     "@ionic/app-scripts": "2.1.3",
     "@ionic/cli-plugin-ionic-angular": "1.4.1",
+    "express": "^4.15.4",
     "ionic": "3.9.1",
+    "nodemon": "^1.11.0",
     "typescript": "2.3.4"
   },
   "description": "An Ionic project"
